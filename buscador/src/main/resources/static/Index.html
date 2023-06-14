@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscaloco</title>
+    <link rel="Stylesheet" href="Style.css"/>
+</head>
+<body>
+
+    <div id = "main">
+        <img id = "logo" src="img/seeker.png"/>
+        <input id= "searchInput" type="text" />
+        <button onclick="search()">Buscalocar algo</button>
+        <button>Busca con Suerte</button>
+    </div>
+
+    <script>
+        function search(){
+            let txtSearch = document.getElementById('searchInput').value
+            document.location.href = 'results.html?query='+ txtSearch;
+
+        }
+    </script>
+   
+</body>
+</html>
